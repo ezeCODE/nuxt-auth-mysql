@@ -1,0 +1,78 @@
+ @import "./screen";
+ 
+.box-test{ z-index: 1000;
+  position: absolute; top: 0em; left: 0em; width: 100%; height: 100% ; 
+  background: rgba(255, 255, 0, 0.74);
+}
+
+.container { 
+    position: relative ; width: 100%; margin: auto; max-width: 1600px;  
+    background: rgb(255, 255, 255); 
+  @include tablet { box-sizing: border-box; padding-top: 3em; }
+} 
+
+.title-h3, .title-h5{  line-height: 2em; font-weight: bold;  color: rgb(106, 106, 252); 
+    font-family: 'Poppins', sans-serif;
+
+}
+.title-h3 { font-size: 2em;
+    @include desktop { font-size: 2em; }
+}
+
+.title-h5{  font-size: 1.3em; 
+    @include desktop { font-size: 1em; }
+
+}
+
+ 
+ 
+.box-animate{ position: relative; width: 100%; overflow: hidden ; height: 0em;
+    transition:   .5s ease-in-out ;
+}
+
+.box-animate-active { height: 240px; }
+
+
+.padding-tb-3{ box-sizing: border-box;  padding: 3em 0em;}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(106, 106, 252);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(106, 106, 252);
+  }
+
+
+//tools
+.margin-auto { margin: auto; }
+ .max-content { width: max-content; }
+
+
+ .grid {
+   display: grid;
+ }
+ 
+ 
+ .grid-col-1 { grid-template-columns: repeat(1, 1fr);   gap: 1.5em;
+  @include tablet {    gap: 1.5em;}
+ }
+ 
+ .grid-col-3 { grid-template-columns: repeat(3, 1fr);   gap: 1.5em;
+  @include tablet {  grid-template-columns: repeat(3, 1fr);   gap: 1.5em;}
+ }
+

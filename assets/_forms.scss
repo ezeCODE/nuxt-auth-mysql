@@ -1,0 +1,44 @@
+@import "./screen";
+@import "./_buttons";
+
+.form-main{ position: relative; top: 0em; width: 100%; box-sizing: border-box; padding: 0em 1em;
+  display: grid; grid-template-columns: repeat(1, 1fr);  gap: .5em;
+  @include tablet { 
+      width: 50%; margin: auto;
+  }
+  @include desktop { 
+    width: 40%; margin: auto;
+}
+ }
+
+.form-body{ display: grid; gap: .5em; box-sizing: border-box; padding-bottom: 2em;
+
+}
+
+
+  .form-input {  line-height: 2em;
+    border: 1px solid rgb(203, 203, 248);  font-family: 'Poppins', sans-serif;  
+    color: black; font-size: .9em;  border:none; outline: none; margin-top: .2em;
+    border-bottom: 1px solid blue; resize: none; background: rgb(236, 237, 255); width: 100%;
+    &:focus {  border-bottom: 1px solid rgb(61, 61, 61); }
+    &::placeholder { color: rgb(66, 66, 66); }
+}
+
+
+
+.mark{ color: red; font-size: 1.2em; }
+ 
+
+.form-label{  font-weight: bold; font-family: 'Poppins', sans-serif; margin: 0em 0em; font-size: 1em; 
+  color: rgb(33, 117, 165);  
+      
+
+}
+  
+.form-textarea{ resize: none; }
+ 
+.form-link{ font-size: 1em; text-decoration: none;  color: rgb(33, 117, 165); line-height: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+ 

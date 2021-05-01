@@ -1,0 +1,14 @@
+
+@import "./screen.scss";
+
+.paragraph,  .paragraph-res, .paragraph-response {   font-family: 'Poppins', sans-serif;  }
+ 
+.paragraphs, .paragraphs-res{ font-size: .8em; line-height: 24px;// margin:1em 0em;
+    strong {  font-weight: bold;   }
+    @include  tablet { font-size: 1em;  line-height: 26px;}
+    @include  desktop { font-size: 1.1em;  line-height: 26px;}
+
+}
+.paragraph-res{ color: rgb(77, 170, 142); }
+
+.paragraph-response{ font-weight: bold;  color: rgb(15, 133, 35);  }

@@ -1,0 +1,26 @@
+//@import "./screen.scss";
+
+@mixin buttonSmall ($fs, $bg , $fc) {
+    position: relative; border: none; cursor: pointer; margin: 1em 0em;
+    outline: none; font-size: $fs; background: $bg; color: $fc;  border-radius: .5em;
+    box-sizing: border-box; padding: .7em 22px; transition:scale .5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    &:hover { box-shadow: 0 10px 6px -6px #777; }
+    &:disabled { background: silver; }
+    &:active { transform: scale(.9); }
+    &:focus {outline:0;}
+
+}
+
+.button-small{
+    @include buttonSmall (1em, null , black);
+}
+ 
+
+.img-icon-button{ cursor: pointer;
+    width: 50px; display: block; margin: 0em;
+}
+
+
+
+ 
